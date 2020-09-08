@@ -75,7 +75,7 @@ hashed_string = utils.md5('string_to_hash')
 ### Encode String Data
 To encode string data using django SECRET_KEY (available in settings.py file) as key to encode.
 
-Note: If you changed the secret key of you django application then decode won't be able to decode the sting back. Use only in run time use-cases for example encode user id before sending in to client side so client will never get to know the actual user id.
+Note: If you changed the secret key of your django application then it won't decode the string back. Use only in run time use-cases for example encode user id before sending it to client side so client will never get to know the actual user id.
 ```
 encoded_data = utils.encode('MY_DATA_TO_ENCODE')
 ```
