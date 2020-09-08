@@ -9,14 +9,15 @@ def get_long_desc():
 
 setuptools.setup(
     name="general_methods",
-    version="0.0.1",
+    version="0.0.2",
     author="Vishal Anand",
     author_email="vishalanandl177@gmail.com",
     description="A small general methods.",
     long_description=get_long_desc(),
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/vishalanandl177/General-Methods",
     packages=setuptools.find_packages(),
+    install_requires=["djangorestframework>=3.7.4"],
     license='GNU General Public License v3.0',
     python_requires='>=3.5',
     classifiers=[
